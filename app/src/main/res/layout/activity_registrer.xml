@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".login">
+    tools:context=".Registrer">
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -19,7 +19,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/inputPhone2"
+        android:id="@+id/inputPassword"
         android:layout_width="268dp"
         android:layout_height="49dp"
         android:layout_marginStart="68dp"
@@ -99,16 +99,17 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/confrim_registrer"
         android:layout_width="268dp"
         android:layout_height="50dp"
         android:layout_marginStart="72dp"
         android:layout_marginTop="40dp"
         android:backgroundTint="#333131"
+        android:onClick="recogerDatos"
         android:text="Confirm"
         android:textColor="#20B25D"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPhone2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
     <EditText
         android:id="@+id/input_email"
@@ -142,13 +143,17 @@
 
     <ImageButton
         android:id="@+id/imageButton4"
+        android:onClick="OnclickLogin"
         android:layout_width="106dp"
         android:layout_height="67dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="21dp"
         android:background="#000000"
-        android:onClick="OnclickLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/boton_atras"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="151dp"
         tools:srcCompat="@drawable/boton_atras" />
 
     <TextView
