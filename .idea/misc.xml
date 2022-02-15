@@ -6,18 +6,9 @@
         <entry key="app/src/main/res/drawable/boton_atras.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/caja_inicio.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/login_boton.xml" value="0.134" />
-        <entry key="app/src/main/res/drawable/pagos_xml.xml" value="0.242" />
-        <entry key="app/src/main/res/drawable/registrer_button.xml" value="0.1305" />
-        <entry key="app/src/main/res/layout/activity_burguer.xml" value="0.3233695652173913" />
-        <entry key="app/src/main/res/layout/activity_goito.xml" value="0.3233695652173913" />
-        <entry key="app/src/main/res/layout/activity_kfc.xml" value="0.3233695652173913" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18070652173913043" />
-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_mc_donalds.xml" value="0.3233695652173913" />
-        <entry key="app/src/main/res/layout/activity_pay_method.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_registrer.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_restaurantes.xml" value="0.33" />
         <entry key="app/src/main/res/layout/start.xml" value="0.35104166666666664" />
       </map>
     </option>
@@ -27,12 +18,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.35520833333333335" />
-      </ProjectState>
-    </option>
   </component>
 </project>
