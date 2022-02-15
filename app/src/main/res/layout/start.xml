@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/img"
 
-    tools:context=".Registrer">
+    tools:context=".start">
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/caja_inicio"
-        android:onClick="OnclickLogin"
+        android:onClick="OnclickRegistrer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

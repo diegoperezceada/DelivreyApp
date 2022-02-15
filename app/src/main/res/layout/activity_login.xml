@@ -35,17 +35,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/inputPhone2"
+        android:id="@+id/inputPassword"
         android:layout_width="268dp"
         android:layout_height="49dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
         android:inputType="textPassword"
         android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/confrim_registrer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -66,12 +66,13 @@
         android:layout_width="142dp"
         android:layout_height="22dp"
         android:layout_marginStart="68dp"
+        android:layout_marginTop="47dp"
         android:fontFamily="@font/basic"
         android:text="Phone number"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="238dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView5"
@@ -87,15 +88,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/confrim_registrer"
         android:layout_width="268dp"
         android:layout_height="50dp"
         android:layout_marginStart="68dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="185dp"
         android:backgroundTint="#333131"
+        android:onClick="onclick"
         android:text="Confirm"
         android:textColor="@android:color/darker_gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPhone2" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

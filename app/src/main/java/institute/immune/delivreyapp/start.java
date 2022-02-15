@@ -17,11 +17,9 @@ public class start extends AppCompatActivity {
         setContentView(R.layout.start);
     }
 
-    public void OnclickRegistrr(View view){
+
+    public void OnclickRegistrer(View view){
         Intent intent = new Intent(this, Registrer.class);
         startActivity(intent);
-
     }
-
-
 }
