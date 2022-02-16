@@ -39,6 +39,8 @@ public class Registrer extends AppCompatActivity {
         myOpenHelper = new MyOpenHelper(this);
     }
 
+
+
     public void OnclickLogin(View view){
         Intent intent = new Intent(this, login.class);
         startActivity(intent);

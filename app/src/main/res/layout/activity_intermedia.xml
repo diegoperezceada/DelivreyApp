@@ -11,59 +11,83 @@
         android:id="@+id/imageView3"
         android:layout_width="119dp"
         android:layout_height="88dp"
-        app:srcCompat="@drawable/logofinal"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="60dp" />
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logofinal" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:fontFamily="@font/lato_black"
         android:text="Delicious"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="74dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="276dp"
-        android:layout_height="96dp"
-        android:background="@drawable/pagos_xml"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="405dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="276dp"
-        android:layout_height="96dp"
-        app:srcCompat="@drawable/pagos_xml"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="246dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="258dp"
-        android:layout_height="45dp"
-        android:fontFamily="@font/lato_black"
+    <ImageButton
+        android:id="@+id/buttonPedirComida"
+        android:layout_width="287dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#000000"
+        android:onClick="onClickPedirComida"
         android:text="Pedir comida"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        tools:layout_editor_absoluteX="76dp" />
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/pagos_xml"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/buttonDarComida"
+        android:layout_width="287dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="292dp"
+        android:backgroundTint="#000000"
+        android:onClick="onClickDarComida"
+        android:text="Dar comida"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/pagos_xml"
+        tools:ignore="SpeakableTextPresentCheck"/>
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lato_black"
-        android:text="Enviar comida"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        tools:layout_editor_absoluteX="96dp" />
+        android:id="@+id/textViewPedirComida"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:text="Pedir Comida"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPedirComida"
+        app:layout_constraintEnd_toEndOf="@+id/buttonPedirComida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPedirComida" />
+
+    <TextView
+        android:id="@+id/textViewDarComida"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:text="Enviar Comida"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDarComida"
+        app:layout_constraintEnd_toEndOf="@+id/buttonDarComida"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonDarComida"
+        app:layout_constraintVertical_bias="0.513" />
 </androidx.constraintlayout.widget.ConstraintLayout>
