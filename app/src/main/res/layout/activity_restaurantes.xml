@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="408dp"
+    android:layout_height="wrap_content"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="2dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/buttonKfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="592dp"
+            android:onClick="onClickKfc"
+            android:text="Go to KFC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBurguerKing" />
+
+        <Button
+            android:id="@+id/buttonMcDonald"
+            android:layout_width="166dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onClickMcDonalds"
+            android:text="Go to MC DONALD`S"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMcDonals" />
+
+        <TextView
+            android:id="@+id/textViewBurguerKing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="312dp"
+            android:fontFamily="cursive"
+            android:text="BURGUER KING"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewGoiko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="600dp"
+            android:fontFamily="cursive"
+            android:text="GOIKO"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewKfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="876dp"
+            android:fontFamily="cursive"
+            android:text="KFC"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewMcDonals"
+            android:layout_width="147dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="Mc Donald`s"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewMcDonald" />
+
+        <ImageView
+            android:id="@+id/imageViewBurguerKing"
+            android:layout_width="285dp"
+            android:layout_height="171dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="126dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/burguerking" />
+
+        <ImageView
+            android:id="@+id/imageViewGoiko"
+            android:layout_width="285dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="112dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBurguerKing"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBurguerKing"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBurguerKing"
+            app:srcCompat="@drawable/goiko" />
+
+        <ImageView
+            android:id="@+id/imageViewKfc"
+            android:layout_width="285dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="116dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewGoiko"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewGoiko"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewGoiko"
+            app:srcCompat="@drawable/pollo" />
+
+        <ImageView
+            android:id="@+id/imageViewMcDonald"
+            android:layout_width="285dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="156dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewKfc"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewKfc"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewKfc"
+            app:srcCompat="@drawable/hamburguesa" />
+
+        <TextView
+            android:id="@+id/textViewRestaurante"
+            android:layout_width="249dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="58dp"
+            android:fontFamily="cursive"
+            android:text="RESTAURANTES"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonBurguer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="2dp"
+            android:onClick="onClickBurguer"
+            android:text="Go to Burguer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBurguerKing" />
+
+        <Button
+            android:id="@+id/buttonGoiko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="296dp"
+            android:onClick="onClickGoito"
+            android:text="Go to GOIKO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBurguerKing" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
