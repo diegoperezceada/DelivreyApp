@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DelivreyApp">
-
+        <activity
+            android:name=".soupKitchens"
+            android:exported="false" />
+        <activity
+            android:name=".intermedia"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

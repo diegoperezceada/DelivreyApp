@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:textAlignment="center"
+    tools:context=".soupKitchens">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="602dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="156dp"
+                android:layout_height="212dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cajas_comida" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="156dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="108dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.936"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cajas_comida" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="156dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="84dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:srcCompat="@drawable/cajas_comida" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="156dp"
+                android:layout_height="212dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                app:srcCompat="@drawable/cajas_comida" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="129dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="San Juan Bautista"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="153dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:text="C. de la Costa Verde, 15"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="97dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                app:srcCompat="@drawable/caja_inicio" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Enviar"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+                app:layout_constraintEnd_toEndOf="@+id/imageButton2"
+                app:layout_constraintStart_toStartOf="@+id/imageButton2"
+                app:layout_constraintTop_toTopOf="@+id/imageButton2" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="129dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="Virgen de la Candelaria"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="157dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="16dp"
+                android:text="C. Virgen de la Oliva, 69"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="97dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView22"
+                app:srcCompat="@drawable/caja_inicio" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Enviar"
+                tools:layout_editor_absoluteX="290dp"
+                tools:layout_editor_absoluteY="271dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="308dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="334dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/lato_black"
+        android:text="Send your food"
+        android:textColor="#20B25D"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
