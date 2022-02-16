@@ -58,29 +58,31 @@ public class Registrer extends AppCompatActivity {
         Matcher hasDigit = digit.matcher(datosPassword);
         Matcher hasSpecial = special.matcher(datosPassword);
 
-        if (datos_Phone.length()!= 9){
+        if (datos_Phone.length()!= 9 || !datosMail.contains("@") &&datosPassword.length() != 8 && hasLetter.find() || hasDigit.find() && hasSpecial.find()){
             Toast toast1 = Toast.makeText(getApplicationContext(),
                     "Inserte un teléfono válido", Toast.LENGTH_SHORT);
             toast1.show();
         }
 
-        else if (!datosMail.contains("@")){
+        /*if (!datosMail.contains("@")){
             Toast toast1 = Toast.makeText(getApplicationContext(),
                     "Inserte un email válido", Toast.LENGTH_SHORT);
             toast1.show();
         }
 
-        else if(datosPassword.length() != 8 && hasLetter.find() && hasDigit.find() && hasSpecial.find()){
+
+        if(datosPassword.length() != 8 && hasLetter.find() && hasDigit.find() && hasSpecial.find()){
             Toast toast1 = Toast.makeText(getApplicationContext(),
                     "Inserte una contraseña más segura", Toast.LENGTH_SHORT);
             toast1.show();
-        }
+        }*/
 
         else{
+            myOpenHelper.insert_user(datos_Phone, datosMail, datosPassword);
             Intent intent = new Intent(this, intermedia.class);
             startActivity(intent);
 
-            myOpenHelper.insert_user(datos_Phone, datosMail, datosPassword);
+
 
         }
 
