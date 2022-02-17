@@ -46,6 +46,8 @@
         android:textColor="@android:color/darker_gray"
         app:layout_constraintBottom_toTopOf="@+id/confrim_registrer"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

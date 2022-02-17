@@ -2,6 +2,7 @@ package institute.immune.delivreyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -36,11 +37,6 @@ public class pay_method extends AppCompatActivity {
     public void comprobar(View view) {
         listaNombre.add(name.getText().toString());
         String card = number.getText().toString();
-        if (listaNombre.size() != 3) {
-            Toast toast1 = Toast.makeText(view.getContext(),
-                    "Inserte un nombre válido", Toast.LENGTH_SHORT);
-            toast1.show();
-        }
 
         if (number.getText().length() != 16){
             Toast toast1 = Toast.makeText(view.getContext(),
@@ -62,5 +58,11 @@ public class pay_method extends AppCompatActivity {
                             "", Toast.LENGTH_SHORT);
             toast1.show();
         }
+
+        else{
+            Intent intent = new Intent(this, Restaurantes.class);
+            startActivity(intent);
+        }
     }
+
 }

@@ -39,15 +39,12 @@ public class Registrer extends AppCompatActivity {
         myOpenHelper = new MyOpenHelper(this);
     }
 
-
-
     public void OnclickLogin(View view){
         Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 
     public void recogerDatos(View view){
-
 
         String datos_Phone = phone.getText().toString();
         String datosMail = mail.getText().toString();
@@ -79,7 +76,7 @@ public class Registrer extends AppCompatActivity {
 
         else{
             myOpenHelper.insert_user(datos_Phone, datosMail, datosPassword);
-            Intent intent = new Intent(this, intermedia.class);
+            Intent intent = new Intent(this, pay_method.class);
             startActivity(intent);
 
 
