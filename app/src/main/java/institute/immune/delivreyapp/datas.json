@@ -1,0 +1,33 @@
+{
+  "restaurantes": [
+    {
+      "Burger King": "menu1",
+      "KFC": "menu1",
+      "McDonalds": "menu1",
+      "Goiko": "menu1",
+      "Comedor1":
+      {
+        "nombre": "San Juan Bautista",
+        "ubicacion": "C. de la Costa Verde, 15"
+      },
+
+      "Comedor2":
+      {
+        "nombre": "Viregn de la candelaria",
+        "ubicacion": "C. Virgen de la Oliva, 69"
+      },
+
+      "Comedor3":
+      {
+        "nombre": "Centro Santiago Masarnau",
+        "ubicacion": "Calle Serafín de Asís, No 7-A"
+      },
+
+      "Comedor4":
+      {
+      "nombre": "Comedor de Plaza Elíptica",
+      "ubicacion": "Calle San Filiberto, 2"
+      }
+    }
+  ]
+}
