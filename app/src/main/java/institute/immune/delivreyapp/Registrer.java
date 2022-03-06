@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import java.util.regex.Pattern;
 public class Registrer extends AppCompatActivity {
 
     MyOpenHelper myOpenHelper;
+    private Button button;
     private EditText phone, mail, password;
     private String[] lista = {"ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"};
     Pattern letter = Pattern.compile("[a-zA-z]");
@@ -35,6 +37,7 @@ public class Registrer extends AppCompatActivity {
         phone = findViewById(R.id.editTextPhone);
         mail = findViewById(R.id.input_email);
         password = findViewById(R.id.inputPassword);
+        button = findViewById(R.id.confrim_registrer);
 
         myOpenHelper = new MyOpenHelper(this);
     }
@@ -43,6 +46,8 @@ public class Registrer extends AppCompatActivity {
         Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
+
+
 
     public void recogerDatos(View view){
 
@@ -61,24 +66,11 @@ public class Registrer extends AppCompatActivity {
             toast1.show();
         }
 
-        /*if (!datosMail.contains("@")){
-            Toast toast1 = Toast.makeText(getApplicationContext(),
-                    "Inserte un email válido", Toast.LENGTH_SHORT);
-            toast1.show();
-        }
-
-
-        if(datosPassword.length() != 8 && hasLetter.find() && hasDigit.find() && hasSpecial.find()){
-            Toast toast1 = Toast.makeText(getApplicationContext(),
-                    "Inserte una contraseña más segura", Toast.LENGTH_SHORT);
-            toast1.show();
-        }*/
 
         else{
             myOpenHelper.insert_user(datos_Phone, datosMail, datosPassword);
             Intent intent = new Intent(this, pay_method.class);
             startActivity(intent);
-
 
 
         }

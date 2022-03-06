@@ -24,9 +24,4 @@ public class intermedia extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void comprar(View view){
-        Intent intent = new Intent(this, Restaurantes.class);
-        startActivity(intent);
-        
-    }
 }

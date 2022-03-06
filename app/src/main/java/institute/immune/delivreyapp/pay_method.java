@@ -60,7 +60,7 @@ public class pay_method extends AppCompatActivity {
         }
 
         else{
-            Intent intent = new Intent(this, Restaurantes.class);
+            Intent intent = new Intent(this, intermedia.class);
             startActivity(intent);
         }
     }
